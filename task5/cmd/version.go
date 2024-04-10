@@ -9,8 +9,9 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var appVerion = "v1.0.2"
+var appVerion = "appVerion"
 
+// Command to build with ldflags   go build -ldflags="-X 'task5/cmd.appVerion=v1.0.3'"
 // versionCmd represents the version command
 var versionCmd = &cobra.Command{
 	Use:   "version",
