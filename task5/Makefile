@@ -15,6 +15,5 @@ test:
 build: format
 	CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${shell dpkg --print-architecture} go build -v -o kbot -ldflags="-X 'task5/cmd.appVerion=${VERSION}'"
 
-#	CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${shell dpkg --print-architecture} go build -v -o kbot.exe -ldflags="-X 'task5/cmd.appVerion=${VERSION}'"
 clean:
 	rm -rf kbot
